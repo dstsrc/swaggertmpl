@@ -8,7 +8,7 @@
 POST http://localhost:8081/v1/example/echo
 
 {
-"value": "test"
+"value": "test1"
 }
 
 ###
