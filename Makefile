@@ -1,4 +1,4 @@
-
+gen-all: generate-grpc generate-http generate-swagger gen-statik
 
 generate-grpc:
 	protoc -I/usr/local/include -I. -I${GOPATH}/src \

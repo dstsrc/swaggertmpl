@@ -8,9 +8,15 @@ message StringMessage {
 }
 
 service YourService {
-      rpc Echo(StringMessage) returns (StringMessage) {
+      rpc Echo (StringMessage) returns (StringMessage) {
                option (google.api.http) = {
                     post: "/v1/example/echo"
+                    body: "*"
+               };
+      }
+      rpc EchoStream (stream StringMessage) returns (stream StringMessage) {
+          option (google.api.http) = {
+                    post: "/v1/example/stream"
                     body: "*"
                };
       }
