@@ -1,1 +1,1 @@
-простенький пример как прикрутить к проекту сваггер 
+swagger page for app simple example 
